@@ -45,8 +45,8 @@ def download_files(url, pattern, download_dir):
     driver.quit()
 
 if __name__ == "__main__":
-    target_url = "https://www.example.com/index.html"  # Replace with the webpage URL
-    file_pattern = r'\.zip$'  # Regular expression to match .zip files
-    save_directory = "D:\downloads"  # Local directory to save downloaded files
+    target_url = input('Enter the webpage:\n')
+    file_pattern = input('Enter the file pattern (e.g. \\.zip$):\n')
+    save_directory = input('Enter the save directory:\n')
 
     download_files(target_url, file_pattern, save_directory)
